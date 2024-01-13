@@ -1,0 +1,70 @@
+<div class="relative bg-contain bg-center h-64" style="background-image: url('../../../assets/contactBg.jpg'); background-size: cover;">
+    <div class="absolute bottom-0 left-0 right-0 bg-white text-center p-8"  style="margin-left: 35%; margin-right: 35% ;border-top-left-radius: 50px; border-top-right-radius: 50px;">
+      <p class="font-bold text-5xl text-[#292F36] font">Contact Us</p>
+      <p class="text-[#292F36]">Home / Contact Us</p>
+    </div>
+</div>
+
+<div class="ml-64 mr-64 mt-32">
+    <div class="text-center mr-56 ml-56">
+        <p class="font-bold text-5xl text-[#292F36] font">We love meeting new people and helping them.</p>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 mt-16">
+        <div class="bg-[#f4f0ec] rounded-xl p-6 ml-8 mr-8">
+            <div>
+                <div class="self-center flex items-center">
+                    <p class="flex items-center justify-center h-14 w-14 rounded-full bg-white cursor-pointer">
+                        <i class="fa-regular fa-envelope text-[#CDA274] font-bold text-xl"></i>
+                    </p>
+                    <p class="pl-2 text-[#4D5053] cursor-pointer">{{email}}</p>
+                </div>
+                <div class="self-center flex items-center">
+                    <p class="flex items-center justify-center h-14 w-14 rounded-full bg-white cursor-pointer">
+                        <i class="fa-solid fa-phone text-[#CDA274] font-bold text-xl"></i>
+                    </p>
+                    <p class="pl-2 text-[#4D5053] cursor-pointer">+91 9035746742</p>
+                </div>
+                <div class="self-center flex items-center">
+                    <p class="flex items-center justify-center h-14 w-14 rounded-full bg-white cursor-pointer">
+                        <i class="fa-solid fa-earth-asia text-[#CDA274] font-bold text-xl"></i>
+                    </p>
+                    <a class="pl-2 text-[#4D5053] cursor-pointer" style="margin: 0 0 12px;" href="https://therdenterprises.com">https://therdenterprises.com/</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-2">
+            <form class="example-form pt-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="Ex. John">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput placeholder="Ex. pat@example.com">
+                    </mat-form-field>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-8">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Subject</mat-label>
+                        <input matInput placeholder="Ex. My need">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Phone</mat-label>
+                        <input type="number" matInput placeholder="Ex. 9249468891">
+                    </mat-form-field>
+                </div>
+              
+                <mat-form-field class="example-full-width pt-4">
+                  <mat-label>Hello I am Interested in..</mat-label>
+                  <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                </mat-form-field>
+              </form>
+        </div>
+    </div>
+    <div class="pt-8 text-right">
+        <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">Send Now &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i></button>
+    </div>
+</div>

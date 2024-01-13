@@ -1,0 +1,32 @@
+/* src/app/app.component.css */
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+}
+
+.board-row:nth-child(odd) .square:nth-child(even),
+.board-row:nth-child(even) .square:nth-child(odd) {
+background-color: #333333;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-blue {
+  background-color: lightblue;
+}
+
+.dark-blue {
+  background-color: #406CBF !important;
+  color: white !important;
+}
+
+.square:hover {
+  background-color: #40C4FF !important;
+}
