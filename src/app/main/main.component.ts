@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
+
+  constructor(private route: Router) {}
+  
+  goToFutureInterio(){
+    this.route.navigate(['/futureInterio']);
+  }
 
 }
