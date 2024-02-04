@@ -1,59 +1,113 @@
-<div class="bg-cover bg-center h-screen" style="background-image: url('../../../assets/Photo.jpg'); border-bottom-left-radius: 210px;">
-  <div class="p-64">
-    <p class="text-7xl font-bold text-[#292F36] font">Let Your Home <br> Be Unique</p>
-    <p class="pt-2 pb-2 text-[#4D5053]">There are many variations of the passages of lorem Ipsum <br> fromavailable,variations of the passages.</p>
-    <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">Get Started &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i></button>
+<app-header></app-header>
+<div class="bg-cover bg-center h-screen" style="
+    background-image: url('../../../assets/Photo.jpg');
+    border-bottom-left-radius: 210px;
+  ">
+  <div class="xl:p-64 lg:p-32 md:p-16 sm:p-8">
+    <p class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-bold text-[#292F36] font">
+      Elevate Your Space with Distinctive Designs
+    </p>
+    <p class="text-[#4D5053] text-lg">
+      Explore possibilities for your home. Tailored spaces, every detail
+      complements your lifestyle. From furnishings to color palettes, we bring
+      your vision to life.
+    </p>
+
+    <button class="text-white pt-3 pb-3 pr-6 pl-6 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600"
+      (click)="scrollToProject()">
+      Explore Designs &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i>
+    </button>
   </div>
 </div>
-<div class="ml-64 mr-64">
-  <div class="grid grid-cols-3 gap-16 pt-20 pb-20">
+<div class="xl:mr-54 xl:ml-54 lg:mr-32 lg:ml-32 md:ml-16 md:mr-16 sm:mr-6 sm:ml-6">
+  <div class="grid md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-16 pt-20 pb-20">
     <div class="text-center">
-      <p class="font-bold text-[#292F36] font">Project Plan</p>
-      <p class="text-[#4D5053] font">There are many variations of the passages of lorem Ipsum from 
-        available majority.</p>
+      <p class="font-bold text-[#292F36] text-2xl font">Project Plan</p>
+      <p class="text-[#4D5053]">
+        Meticulous planning with tailored project plans. Transforming dreams
+        into reality with seamless execution.
+      </p>
     </div>
     <div class="text-center">
-      <p class="font-bold text-[#292F36] font">Interior Work</p>
-      <p class="text-[#4D5053] font">There are many variations of the passages of lorem Ipsum from 
-        available majority.</p>
+      <p class="font-bold text-[#292F36] text-2xl font">Interior Work</p>
+      <p class="text-[#4D5053]">
+        Artistry of design, creating personalized masterpieces. From exquisite
+        furnishings to harmonizing color schemes.
+      </p>
     </div>
     <div class="text-center">
-      <p class="font-bold text-[#292F36] font">Realization</p>
-      <p class="text-[#4D5053] font">There are many variations of the passages of lorem Ipsum from 
-        available majority.</p>
+      <p class="font-bold text-[#292F36] text-2xl font">Realization</p>
+      <p class="text-[#4D5053]">
+        Witness your vision come to life. Dedicated team, meticulous execution,
+        exceeding expectations.
+      </p>
     </div>
   </div>
-  <div class="grid grid-cols-2 gap-0">
-    <div class="pr-24 self-center">
-      <p class="font-bold text-4xl text-[#292F36] font">We Create The Art Of Stylish Living Stylishly</p>
-      <p class="text-[#4D5053] pt-8">It is a long established fact that a reader will be distracted by the of readable content of a page 
-        when lookings at its layouts the points of using 
-        that it has a more-or-less normal.</p>
+
+  <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-0">
+    <div class="xl:pr-24 lg:pr-16 md:pr-10 sm:pr-6 self-center">
+      <p class="font-bold text-4xl text-[#292F36] font">
+        Elevate Your Living Experience with Our Timeless Designs
+      </p>
+      <p class="text-[#4D5053] pt-8">
+        At Future Interio, we believe in creating extraordinary living spaces
+        that resonate with your lifestyle. Our commitment to excellence is
+        evident in every detail of our designs. We understand that a
+        well-designed space enhances the quality of life, and our team of
+        experts is dedicated to bringing your vision to life.
+      </p>
       <div class="grid grid-cols-6 gap-0 pt-8">
         <div class="col-span-1">
-          <p class="rounded-full bg-[#F4F0EC] h-14 w-14" style="padding: 16px 0px 0px 20px;"><i class="fa-solid fa-phone text-[#CDA274]"></i></p>
+          <div class="rounded-full bg-[#F4F0EC] h-14 w-14 flex items-center justify-center">
+            <i class="fa-solid fa-phone text-[#CDA274]"></i>
+          </div>
         </div>
         <div class="col-span-5 self-center">
-          <p class="text-[#4D5053] font-bold text-2xl">0824 929 1789</p>
+          <p class="text-[#4D5053] font-bold text-2xl">0809 580 7581</p>
           <p class="text-[#4D5053]">Call Us Anytime</p>
         </div>
       </div>
       <div class="pt-8">
-        <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">Get Free Estimate &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i></button>
+        <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600"
+          (click)="navigate('contact-us')">
+          Get Free Estimate &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i>
+        </button>
       </div>
     </div>
-    <div>
-      <img src="../../../assets/Photo (1).jpg" style="border-top-right-radius: 210px; border-bottom-left-radius: 150px;" alt="">
+    <div class="xl:block lg:block hidden">
+      <img src="../../../assets/Photo (1).jpg" style="border-top-right-radius: 210px; border-bottom-left-radius: 150px"
+        alt="Stylish Living Room" />
     </div>
   </div>
-  <div class="mt-24">
-    <div class="text-center pr-10 pl-10  mb-16">
+
+  <div class="mt-24 p-10 bg-[#F4F0EC] text-center rounded-xl">
+    <p class="font-bold text-4xl text-[#292F36] font">Explore Our Services</p>
+
+    <div class="grid grid-cols-2 gap-10 mt-10">
+      <a href="/services" class="bg-white p-10 rounded-xl hover:bg-gray-100 shadow-md">
+        <p class="text-2xl font-bold font">Residential Services</p>
+        <p>Discover our exceptional residential design and transformation solutions.</p>
+      </a>
+      <a class="bg-white p-10 rounded-xl hover:bg-gray-100 shadow-md">
+        <p class="text-2xl font-bold font">Commercial Services</p>
+        <p>Explore our innovative commercial design and workspace optimization services.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="mt-24" #scrollTargetProject>
+    <div class="text-center pr-10 pl-10 mb-16">
       <p class="font-bold text-4xl text-[#292F36] font">Follow Our Projects</p>
-      <p class="text-[#4D5053] pt-4">It is a long established fact that a reader will be distracted by the of readable <br> content of page  lookings at its layouts  points.</p>
+      <p class="text-[#4D5053] pt-4">
+        It is a long established fact that a reader will be distracted by the of
+        readable <br />
+        content of page lookings at its layouts points.
+      </p>
     </div>
-    <div class="grid grid-cols-2 gap-24">
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-24">
       <div>
-        <img src="../../../assets/kitchen.png" alt="kitchen" style="border-top-right-radius: 100px;">
+        <img src="../../../assets/kitchen.png" alt="kitchen"
+          style="border-top-right-radius: 100px; width: -webkit-fill-available;" />
         <div class="flex justify-between pt-5 pb-10">
           <div>
             <p class="font-bold text-xl text-[#292F36] font">Modular kitchen</p>
@@ -67,10 +121,11 @@
         </div>
       </div>
       <div>
-        <img src="../../../assets/kitchen1.png" alt="kitchen1" style="border-top-left-radius: 100px;">
+        <img src="../../../assets/kitchen1.png" alt="kitchen1"
+          style="border-top-left-radius: 100px; width: -webkit-fill-available;" />
         <div class="flex justify-between pt-5 pb-10">
           <div>
-            <p class="font-bold text-xl text-[#292F36] font">Modular kitchen</p>
+            <p class="font-bold text-xl text-[#292F36] font">Office Space</p>
             <p class="text-[#292F36">Decor / Artchitecture</p>
           </div>
           <div class="self-center">
@@ -81,12 +136,13 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-2 gap-24">
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-24">
       <div>
-        <img src="../../../assets/kitchen2.png" alt="kitchen2" style="border-bottom-right-radius: 100px;">
+        <img src="../../../assets/kitchen2.png" alt="kitchen2"
+          style="border-bottom-right-radius: 100px; width: -webkit-fill-available;" />
         <div class="flex justify-between pt-5 pb-10">
           <div>
-            <p class="font-bold text-xl text-[#292F36] font">Modular kitchen</p>
+            <p class="font-bold text-xl text-[#292F36] font">Living/Dining Area</p>
             <p class="text-[#292F36">Decor / Artchitecture</p>
           </div>
           <div class="self-center">
@@ -97,10 +153,11 @@
         </div>
       </div>
       <div>
-        <img src="../../../assets/kitchen3.png" alt="kitchen3" style="border-bottom-left-radius: 100px;">
+        <img src="../../../assets/kitchen3.png" alt="kitchen3"
+          style="border-bottom-left-radius: 100px; width: -webkit-fill-available;" />
         <div class="flex justify-between pt-5 pb-10">
           <div>
-            <p class="font-bold text-xl text-[#292F36] font">Modular kitchen</p>
+            <p class="font-bold text-xl text-[#292F36] font">Foyer Area</p>
             <p class="text-[#292F36">Decor / Artchitecture</p>
           </div>
           <div class="self-center">
@@ -114,7 +171,8 @@
   </div>
 </div>
 
-<div class="grid grid-cols-4 divide-x-2 divide-[#CDA274] pt-28 pb-28 bg-[#f4f0ec] pl-64 pr-64">
+<div
+  class="grid grid-cols-4 divide-x-2 divide-[#CDA274] pt-28 pb-28 bg-[#f4f0ec] xl:pl-64 lg:pl-32 md:pl-16 sm:pl-8 xl:pr-64 lg:pr-32 md:pr-16 sm:pr-8">
   <div class="text-center">
     <p class="font font-bold text-7xl text-[#CDA274]">12</p>
     <p class="text-[#4D5053]">Years Of Experience</p>
@@ -133,15 +191,21 @@
   </div>
 </div>
 
-<div class="ml-64 mr-64 mt-32">
-  <div class="text-center p-24 bg-[#292F36]" style="border-radius: 60px;">
-    <p class="font-bold text-4xl text-white font">Wanna join the interno?</p>
-    <p class="text-white pt-4">It is a long established fact  will be distracted.</p>
+<div class="mt-32 xl:mr-64 lg:mr-32 md:mr-12 sm:mr-8 xl:ml-64 lg:ml-32 md:ml-12 sm:ml-8">
+  <div class="xl:p-24 lg:p-24 md:p-12 sm:p-8 bg-[#292F36] text-center" style="border-radius: 60px">
+    <p class="font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl text-white font">
+      Ready to Transform Your Space with Future Interio?
+    </p>
+    <p class="text-white pt-4">
+      Discover the art of interior design that goes beyond the ordinary.
+    </p>
     <div class="pt-6">
-      <button class="text-white pt-3 pb-3 pr-7 pl-7 rounded-lg hover:text-gray-100 bg-[#CDA274] hover:bg-gray-600">Contact with us &nbsp;<i class="fa-solid fa-arrow-right-long text-black"></i></button>
+      <button
+        class="text-white pt-2 pb-2 pr-4 pl-4 xl:pt-3 xl:pb-3 xl:pr-7 xl:pl-7 rounded-lg hover:text-gray-100 bg-[#CDA274] hover:bg-gray-600"
+        (click)="navigate('contact-us')">
+        Get in Touch &nbsp;<i class="fa-solid fa-arrow-right-long text-black"></i>
+      </button>
     </div>
   </div>
 </div>
-
-<!-- <div class="h-screen" style="background-image: url('../../assets/Photo.jpg');">
-</div> -->
+<app-footer></app-footer>

@@ -1,64 +1,88 @@
-<div class="relative bg-contain bg-center h-64" style="background-image: url('../../../assets/about.png'); background-size: cover;">
-    <div class="absolute bottom-0 left-0 right-0 bg-white text-center p-8"  style="margin-left: 35%; margin-right: 35% ;border-top-left-radius: 50px; border-top-right-radius: 50px;">
-      <p class="font-bold text-5xl text-[#292F36] font">About Us</p>
-      <p class="text-[#292F36]">Home / About Us</p>
-    </div>
+<app-header></app-header>
+<div class="relative bg-contain bg-center h-64" style="
+    background-image: url('../../../assets/about.png');
+    background-size: cover;
+  ">
+  <div class="absolute bottom-0 left-0 right-0 bg-white text-center p-8" style="
+      margin-left: 35%;
+      margin-right: 35%;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    ">
+    <p class="font-bold text-5xl text-[#292F36] font">About Us</p>
+    <p class="text-[#292F36]">Home / About Us</p>
+  </div>
 </div>
 
-<div class="ml-64 mr-64 mt-32">
-    <div class="grid grid-cols-3 gap-8" style="justify-items: flex-end;">
-        <div class="self-center">
-            <p class="font-bold text-5xl text-[#292F36] font">What We Do</p>
-            <p class="text-[#4D5053] text-xl pt-8">It is a long established fact that a reader will be distracted by the of readable content of a page 
-                when lookings at its layouts the points of using 
-                that it has a more-or-less normal.</p>
-            <div class="pt-8">
-              <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">Our Concept &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i></button>
-            </div>
-        </div>
-        <div class="col-span-2">
-            <img src="../../../assets/concept.jpg" style="border-radius: 50px;" alt="">
-        </div>
+<div class="mt-32 xl:mr-64 xl:ml-64 lg:mr-32 lg:ml-32 md:ml-16 md:mr-16 sm:mr-6 sm:ml-6">
+  <div class="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-8"
+    style="justify-items: flex-end">
+    <div class="self-center lg:col-span-1 md:col-span-2 sm:col-span-1">
+      <p class="font-bold text-5xl text-[#292F36] font">What We Do</p>
+      <p class="text-[#4D5053] text-xl pt-8">
+        It is a long established fact that a reader will be distracted by the of
+        readable content of a page when looking at its layouts. The point of
+        using that it has a more-or-less normal.
+      </p>
+      <div class="pt-8">
+        <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">
+          Our Concept &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i>
+        </button>
+      </div>
     </div>
-    <div class="grid grid-cols-3 gap-8 mt-16" style="justify-items: flex-start;">
-        <div class="col-span-2">
-            <img src="../../../assets/concept2.jpg" style="border-radius: 50px;" alt="">
-        </div>
-        <div class="self-center">
-            <p class="font-bold text-5xl text-[#292F36] font">The End Result</p>
-            <p class="text-[#4D5053] text-xl pt-8">It is a long established fact that a reader will be distracted by the of readable content of a page 
-                when lookings at its layouts the points of using 
-                that it has a more-or-less normal.</p>
-            <div class="pt-8">
-              <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">Our Portfolio &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i></button>
-            </div>
-        </div>
+    <div class="col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1">
+      <img src="../../../assets/concept.jpg" style="border-radius: 50px" alt="" />
     </div>
+  </div>
 
-    <div class="mt-24 text-center" style="text-align: -webkit-center;">
-        <p class="font-bold text-5xl text-[#292F36] font pr-56 pl-56">Creative project? Let's have a productive talk.</p>
-        <form class="example-form pt-8">
-            <div class="grid grid-cols-2 gap-8">
-                <mat-form-field class="example-full-width">
-                    <mat-label>Name</mat-label>
-                    <input matInput placeholder="Ex. John">
-                </mat-form-field>
-                <mat-form-field class="example-full-width">
-                    <mat-label>Email</mat-label>
-                    <input type="email" matInput placeholder="Ex. pat@example.com">
-                </mat-form-field>
-            </div>
-          
-            <mat-form-field class="example-full-width pt-4">
-              <mat-label>Hello I am Interested in..</mat-label>
-              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-            </mat-form-field>
-          </form>
-
-          <div class="pt-8">
-            <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">Send Now &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i></button>
-          </div>
-          <!-- <mat-slide-toggle>Toggle me!</mat-slide-toggle> -->
+  <div class="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-8 mt-16">
+    <div class="col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1">
+      <img src="../../../assets/concept2.jpg" style="border-radius: 50px" alt="" />
     </div>
+    <div class="self-center lg:col-span-1 md:col-span-2 sm:col-span-1">
+      <p class="font-bold text-5xl text-[#292F36] font">What We Do</p>
+      <p class="text-[#4D5053] text-xl pt-8">
+        It is a long established fact that a reader will be distracted by the of
+        readable content of a page when looking at its layouts. The point of
+        using that it has a more-or-less normal.
+      </p>
+      <div class="pt-8">
+        <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">
+          Our Portfolio &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-24 text-center" style="text-align: -webkit-center">
+    <p
+      class="font-bold text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-[#292F36] font xl:pr-56 xl:pl-56 lg:pr-32 lg:pl-32 md:pl-16 md:pr-16 sm:pr-6 sm:pl-6">
+      Creative project? Let's have a productive talk.
+    </p>
+    <form class="example-form pt-8">
+      <div class="grid grid-cols-2 gap-8">
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Ex. John" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput placeholder="Ex. pat@example.com" />
+        </mat-form-field>
+      </div>
+
+      <mat-form-field class="example-full-width pt-4">
+        <mat-label>Hello I am Interested in..</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+    </form>
+
+    <div class="pt-8">
+      <button class="text-white pt-4 pb-4 pr-8 pl-8 rounded-xl hover:text-gray-100 bg-[#292F36] hover:bg-gray-600">
+        Send Now &nbsp;<i class="fa-solid fa-arrow-right-long text-[#CDA274]"></i>
+      </button>
+    </div>
+    <!-- <mat-slide-toggle>Toggle me!</mat-slide-toggle> -->
+  </div>
 </div>
-  
+<app-footer></app-footer>

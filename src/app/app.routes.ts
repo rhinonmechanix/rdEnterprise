@@ -1,12 +1,16 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from './pages/about/about.component';
-import { AssignmentComponent } from './assignment/assignment.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { MainComponent } from './main/main.component';
+
+// export const routes: Routes = [
+//   { path: '', component: HomeComponent },
+//   { path: 'home', component: HomeComponent },
+//   { path: 'about', component: AboutComponent },
+//   { path: 'contact-us', component: ContactUsComponent },
+//   { path: 'services', component: ServicesComponent },
+// ];
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'home', component: HomeComponent },
-    { path: 'about', component: AboutComponent },
-    { path: 'contact-us', component: ContactUsComponent }
+  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', component: MainComponent },
+  { path: 'futureInterio', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
 ];
